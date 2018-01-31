@@ -15,8 +15,16 @@ The investigation will be broken down into these five stages:
 
 ### Defining the Problem
 The topic we would like to explore in this project is to see if we can predict the survival of the Titanic passengers based on the data we have been given. If we know the personal statistics of a passenger, can we reasonably predict if the passenger survived or not?
+
 The second question is to investigate which factors have the most impact on whether the passenger survives or not. For example, is the main factor gender? Or does the passenger's wealth play a more important role?
 ### Get the Data
+Usually this section would be much more involved. Thankfully in this case, the data is already provided for us by Kaggle: [Kaggle](https://www.kaggle.com/c/titanic/data)
+
+The data provided by Kaggle is also structured. They provide us with both a training data set and a test dataset for which we can test our modeling on. 
+The Kaggle data provides whether the passenger survived or not, as well as other characteristics of the passenger such as gender, parch (# of parents/children on board), sibsp (# of siblings and spouses on board), and cabin number.
 ### Data Exploration
+
+
+
 ### Model the Data
 ### Communicate Results
