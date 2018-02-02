@@ -24,8 +24,8 @@ The data provided by Kaggle is also structured. They provide us with both a trai
 The Kaggle data provides whether the passenger survived or not, as well as other characteristics of the passenger such as gender, parch (# of parents/children on board), sibsp (# of siblings and spouses on board), and cabin number.
 ### Data Exploration
 Here we explore what is the data available to us. We start by using pandas functions .info() and .head()
-[pandas.info()](Images/info.png)
-[pandas.head()](Images/dataHead.png)
+![pandas.info()](Images/info.png)
+![pandas.head()](Images/dataHead.png)
 
 
 ### Model the Data
