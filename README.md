@@ -37,11 +37,13 @@ Seems that this is one column we can drop as we don't even have a quarter of the
 We are also missing a good chunk of data from "Age". However, the vast majority of the entries are there so perhaps we can still draw some conclusions from this data still
 
 ![Estimate Age](Images/EstimateAge.png)
+
 Above we note that we have most of the data for Age. It would be a shame not to use this information. So we construct estimates for the Ages that we are missing using the graph above.
 
 For a given passenger missing the age data, we substitute using the mean age for his/her class and gender.  
 
 ![heatmap of null values](Images/Heatmap.png)
+
 We make a heatmap of the null values of the data above. We can see that indeed we are missing most of the Cabin data and a lot of the Age data. 
 Obviously the Cabin data can be very important to determining who survives. Unfortunately we are missing most of the data so the conclusions we can draw are limited.
 We are missing some of the Age data. However, we may be able to extrapolate some of the data
