@@ -1,5 +1,5 @@
 # Titanic
-Data Analysis on Kaggle Dataset Titanic
+Data Analysis on Kaggle Dataset Titanic using Logistic Regression and 9-Fold Cross Validation K Nearest Neighbor (using Elbow Method)
 
 ## Introduction
 The RMS Titanic was a British passenger ship that hit an iceberg on its maiden voyage and sank in 1912. It was the largest passenger ship afloat at the time and its sinking claimed the lives of over 1500 people, making it one of the worst maritime accidents in history. 
