@@ -51,12 +51,15 @@ We are missing some of the Age data. However, we may be able to extrapolate some
 #### Age & Gender
 
 Survival by Age and Sex Facet Grid
+
 ![Survival by Age and Sex](Images/SurvivalByAgeAndSex.png)
 
 Survival by Age
+
 ![Survival by Age](Images/SurvivalByAge.png)
 
 Survival by Age and Sex Bar Graph
+
 ![Survival by Age and Sex](Images/SurvivalByAgeAndSexBarGraph.png)
 
 * From the above we can clearly conclude that there is strong correlation between survival rates and gender. From the first graph, seems that survival is greater for female than male for almost all ages
@@ -69,6 +72,7 @@ Survival by Age and Sex Bar Graph
 -In addition, we add a variable called MalexKid. We notice an interaction effect for gender and age. Seems that boys survive at a much higher rate. We don't see the same effect for girls. So we add this interaction effect to account for this.
 
 #### Survival by Various Metrics
+
 ![Survival by Various Metrics](Images/SurvivalRatesVariousMetrics.png)
 
 * SibSp represents the # of siblings and spouse that are on the Titanic for each passenger.
@@ -81,9 +85,11 @@ Survival by Age and Sex Bar Graph
 
 #### Fares
 Fares Histogram
+
 ![Fares Histogram](Images/FaresHistogram.png)
 
 Survival by Fares
+
 ![Survival by Fares](Images/SurvivalByFare.png)
 
 * Looking at the distribution of fares in the histogram, we can see that generally the fares are on the lower end. The vast majority of the passengers paid less than 100
@@ -135,7 +141,7 @@ We see that the lowest error rate is 17. So we use 17 as the parameter for Neare
 The predictive power of the K Nearest Neighbor is slightly weaker as can be seen. The accuracy is 82% for the training data
 Again, recall is low for the predicting survivors at only 68%. Only 68% of survivors of the dataset were correctly predicted
 
-We apply the fitted nearest neighbor on the test data. The accuracy is **76%*
+We apply the fitted nearest neighbor on the test data. The accuracy is **76%**
 
 
 #### Summary
