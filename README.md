@@ -24,9 +24,11 @@ The Kaggle data provides whether the passenger survived or not, as well as other
 Here we explore what is the data available to us. We start by using pandas functions .info() and .head() to get below data
 
 info()
+
 ![pandas.info()](Images/info.png)
 
 head()
+
 ![pandas.head()](Images/dataHead.png)
 
 From the above we can see the type of data we have. First we note that there are 891 entries. Moreover, we are missing some data. The data for "Cabin", we only have 204 of the 891 entries.
@@ -46,13 +48,13 @@ We are missing some of the Age data. However, we may be able to extrapolate some
 
 #### Age & Gender
 
-#####Survival by Age and Sex Facet Grid
+Survival by Age and Sex Facet Grid
 ![Survival by Age and Sex](Images/SurvivalByAgeAndSex.png)
 
-#####Survival by Age
+Survival by Age
 ![Survival by Age](Images/SurvivalByAge.png)
 
-#####Survival by Age and Sex Bar Graph
+Survival by Age and Sex Bar Graph
 ![Survival by Age and Sex](Images/SurvivalByAgeAndSexBarGraph.png)
 
 * From the above we can clearly conclude that there is strong correlation between survival rates and gender. From the first graph, seems that survival is greater for female than male for almost all ages
@@ -64,7 +66,7 @@ We are missing some of the Age data. However, we may be able to extrapolate some
 -Overall from this information we conclude a few on variables. The age and survival rate correlation is spotty in the middle. So we break up age into kid, adult, and elderly. 
 -In addition, we add a variable called MalexKid. We notice an interaction effect for gender and age. Seems that boys survive at a much higher rate. We don't see the same effect for girls. So we add this interaction effect to account for this.
 
-#####Survival by Various Metrics
+#### Survival by Various Metrics
 ![Survival by Various Metrics](Images/SurvivalRatesVariousMetrics.png)
 
 * SibSp represents the # of siblings and spouse that are on the Titanic for each passenger.
@@ -75,7 +77,7 @@ We are missing some of the Age data. However, we may be able to extrapolate some
 * Looking at Parents/Children, we can see that passengers with 0 Parch has a lower survival rate. The survival rate is highest for those with 1 parent/child. These are most likely the nuclear families. 
 * Thus we create two categorical variables to cover the 0 Parch and 1 Parch cases
 
-#####Fares
+#### Fares
 Fares Histogram
 ![Fares Histogram](Images/FaresHistogram.png)
 
@@ -87,7 +89,7 @@ Survival by Fares
 * Looking at the survival rate, it does seem that fares have some correlation with survival rate, but up to a point. The passengers that paid 100 or less seem to have died at a disproportionate rate. However, this trend disappears above 100
 * We ignore the outliers survival rate of the highest fare
 
-#####Suffix
+#### Suffix
 ![Survival by Suffix](Images/SurvivalBySuffix.png)
 
 * We first note that the names of the passenger are not quite useful since they are not quantitative. And indeed, it shouldn't make a difference if a passenger is named Jason or James
@@ -104,7 +106,7 @@ Survival by Fares
 
 Here we actually model the data for the Titanic. There's several models that we can use to model this. I choose two below:
 
-#####Logistic Regression
+#### Logistic Regression
 Logistic Regression is the most obvious choice for this classification model problem. Logistic regression is ideal for data where the logit odds are linear. Here we attempt to model the data with logistic regression
 
 Using scikit-learn, we model the data using Logistic Regression. We achieve the below results on the training data set:
@@ -115,7 +117,7 @@ The recall is a bit lower for the survivors which suggests that the regression c
 
 Finally, we apply the fitted logistic regression on the test data. The accuracy is **77.5%**
 
-#####K Nearest Neighbors
+#### K Nearest Neighbors
 K Nearest Neighbors is another model for classification problems. Unlike logistic regression, Nearest Neighbors does not assume a functional form for the data
 
 For the K Nearest Neighbors method, we must choose the number of neighbors as the only parameter. To do this, we use the **Elbow Method** to see what is the lowest error rate by neighbors
@@ -134,7 +136,7 @@ Again, recall is low for the predicting survivors at only 68%. Only 68% of survi
 We apply the fitted nearest neighbor on the test data. The accuracy is **76%*
 
 
-#####Summary
+#### Summary
 Overall, we used logistic regression with multiple variables to achieve an accuracy of 77.5% of predictions for survivors of the Titanic.
 
 Using 9-fold cross validation, we chose to use 17 as the parameter for K Nearest Neighbor. With 17 neighbors, we see that the accuracy is 76% which is lower.
